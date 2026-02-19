@@ -46,7 +46,7 @@ video {
 }
 
 .card p {
-    font-size: clamp(1.4, 1.2, 1.5);
+    font-size: 1.5rem;
 }
 
 .widget {
@@ -61,11 +61,13 @@ video {
 
 .widget-head h2 {
     display: inline-block;
+    font-size: 1.8rem;
     width: 100%;
     border-bottom: 2px solid #ffffff9f;
 }
 
 .widget-head ul li {
+    font-size: 1.3rem;
     padding-top: 8px;
 }
 
