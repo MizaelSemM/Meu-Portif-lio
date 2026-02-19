@@ -1,8 +1,106 @@
-h1{
-    font-size: 70px;
-    text-align: center;
-    color: white;
+video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -2;
 }
-body{
-    background-color: red;
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 50px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px 30px;
+    color: #fff;
+    animation: fadeIn 1.5s ease forwards;
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 25px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-size: clamp(1.4, 1.2, 1.5);
+}
+
+.widget {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.widget-head {
+    width: 100%;
+}
+
+.widget-head h2 {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid #ffffff9f;
+}
+
+.widget-head ul li {
+    padding-top: 8px;
+}
+
+.widget-head ul li::before {
+    content: "› ";
+    color: #00c6ff;
+}
+
+.card a {
+    display: inline-block;
+    padding: 12px 55px;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    box-shadow: 0 0 20px #00c6ff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    font-size: clamp(1.1em, 1.2em, 1.3em);
+}
+
+.card a:hover {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    transform: scale(1.05);
+}
+
+footer {
+    color: #ffffffaf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1.1rem, 1.2rem, 1.3rem);
+}
+
+footer .wrraper {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
